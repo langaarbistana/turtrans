@@ -8,10 +8,16 @@
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
+            background-color: #080021;
+        }
+        h2 {
+            color: #959FFF;
         }
         .container {
             max-width: 500px;
             margin: 0 auto;
+            align-items: center;    
+            justify-content: center;
         }
         input, button {
             padding: 10px;
@@ -24,11 +30,16 @@
             background-color: #f4f4f4;
             border-radius: 5px;
         }
+        button {
+            background-color: #959FFF;
+            border-radius: 5px;
+            border: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Turtrans</h1>
+        <a><img src="https://github.com/turkistanese/turtrans/blob/main/Turtrans.png?raw=true" height="50px"></a>
         <h2>An english to turkistanese translator.</h2>
         <input type="text" id="englishWord" placeholder="Enter English word">
         <button onclick="translateWord()">Translate</button>
