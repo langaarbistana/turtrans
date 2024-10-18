@@ -39,16 +39,16 @@
 </head>
 <body>
     <div class="container">
-        <a><img src="https://github.com/turkistanese/turtrans/blob/main/Turtrans.png?raw=true" height="50px"></a>
-        <h2>An english to turkistanese translator.</h2>
+        <a><img src="https://github.com/langaturkinisia/turtrans/blob/main/Turtrans.png?raw=true" height="50px"></a>
+        <h2>An english to turkinisian translator.</h2>
         <input type="text" id="englishWord" placeholder="Enter English word">
         <button onclick="translateWord()">Translate</button>
         <div class="result" id="result"></div>
-        <a href="https://turkistanese.github.io"><img height="50px" src="https://github.com/turkistanese/assets/blob/main/langaturkistana.png?raw=true"></a>
+        <a href="https://langaturkinisia.github.io"><img height="50px" src="https://github.com/langaturkinisia/assets/blob/main/langaturkistana.png?raw=true"></a>
     </div>
 
     <script>
-        const dbUrl = 'https://raw.githubusercontent.com/turkistanese/words-db/refs/heads/main/translations.json';
+        const dbUrl = 'https://raw.githubusercontent.com/langaturkinisia/words-db/refs/heads/main/translations.json';
     
         let translationDatabase = {};
     
@@ -76,9 +76,9 @@
             const resultDiv = document.getElementById("result");
     
             if (translationDatabase[englishWord]) {
-                resultDiv.innerHTML = `Turkistanese Translation: <strong>${translationDatabase[englishWord]}</strong>`;
+                resultDiv.innerHTML = `Turkinisian Translation: <strong>${translationDatabase[englishWord]}</strong>`;
             } else {
-                resultDiv.innerHTML = `This word doesn't have any Turkistanese equivalent yet! Use the English one instead.`;
+                resultDiv.innerHTML = `This word doesn't have any Turkinisian equivalent yet! Use the English one instead.`;
             }
         }
         window.onload = function() {
