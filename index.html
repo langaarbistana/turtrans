@@ -48,7 +48,7 @@
     </div>
 
     <script>
-        const dbUrl = 'https://raw.githubusercontent.com/langaturkinisia/words-db/refs/heads/main/translations.json';
+        const dbUrl = 'https://raw.githubusercontent.com/langaarbistana/words-db/refs/heads/main/translations.json';
     
         let translationDatabase = {};
     
@@ -76,7 +76,7 @@
             const resultDiv = document.getElementById("result");
     
             if (translationDatabase[englishWord]) {
-                resultDiv.innerHTML = `Turkinisian Translation: <strong>${translationDatabase[englishWord]}</strong>`;
+                resultDiv.innerHTML = `Arbistanese Translation: <strong>${translationDatabase[englishWord]}</strong>`;
             } else {
                 resultDiv.innerHTML = `This word doesn't have any Turkinisian equivalent yet! Use the English one instead.`;
             }
